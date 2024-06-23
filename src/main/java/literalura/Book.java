@@ -8,19 +8,13 @@ public class Book {
     private String language; // Idioma do livro
     private int downloadCount; // Contador de downloads
 
+
     public static class Author {
         private String name;
-        private int birthYear;
-        private int deathYear;
+        private Integer birthYear;
+        private Integer deathYear;
 
-        public Author() {
-        }
-
-        public Author(String name, int birthYear, int deathYear) {
-            this.name = name;
-            this.birthYear = birthYear;
-            this.deathYear = deathYear;
-        }
+        // Getters and Setters
 
         public String getName() {
             return name;
@@ -30,32 +24,24 @@ public class Book {
             this.name = name;
         }
 
-        public int getBirthYear() {
+        public Integer getBirthYear() {
             return birthYear;
         }
 
-        public void setBirthYear(int birthYear) {
+        public void setBirthYear(Integer birthYear) {
             this.birthYear = birthYear;
         }
 
-        public int getDeathYear() {
+        public Integer getDeathYear() {
             return deathYear;
         }
 
-        public void setDeathYear(int deathYear) {
+        public void setDeathYear(Integer deathYear) {
             this.deathYear = deathYear;
         }
     }
 
-    public Book() {
-    }
 
-    public Book(String title, List<Author> authors, String language, int downloadCount) {
-        this.title = title;
-        this.authors = authors;
-        this.language = language;
-        this.downloadCount = downloadCount;
-    }
 
     public String getTitle() {
         return title;
